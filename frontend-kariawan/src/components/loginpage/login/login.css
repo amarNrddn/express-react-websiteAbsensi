@@ -1,0 +1,126 @@
+main {
+    height: 100%;
+}
+@keyframes background {
+    100% {background-size: 4000px 1000px;}
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+main {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    padding: 0 24px;
+    background-image:  url('../../../assets/Wave.svg');
+    background-size: 2000px 1000px;
+    background-position: -500px 0;
+    color: #f9f9f9;
+    font-family: "Eucild Cilcular A";
+    animation:
+        background 10s infinite alternate linear;
+}
+
+
+.login {
+    width: 100%;
+    height: 390px;
+    padding-left: 70px 30px 44px;
+    border-radius: 20px;
+    background: #161616;
+    text-align: center;
+}
+
+.judul{
+    padding: 30px;
+}
+.login-form{
+    display: grid;
+    gap: 16px;
+    place-items: center;
+    width: 100%;
+    margin: 0;
+}
+
+.text-box {
+    width: 100%;
+    position: relative;
+    padding: 0 10px;
+}
+
+.text-box span {
+    position: absolute;
+    top: 50%;
+    left: 16px;
+    translate: 0 -50%;
+    color: rgba(255, 255, 255, 0.38);
+}
+
+.login-form {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+.login-form input {
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, 0.1);
+    font-size: 18px;
+    padding: 0 20px 0 50px;
+    color: inherit;
+}
+
+.login-form:focus {
+    border-color: #157ae1;
+}
+
+.login-form input:focus span {
+    color: #157ae1;
+}
+
+button {
+    width: 92%;
+    height: 50px;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.button {
+    width: 100%;
+    height: 50px;
+    outline: none;
+    padding: 0;
+    font-size: 16px;
+}
+
+.login-form button,
+.login button {
+    cursor: pointer;
+    background: #157ae1;
+    border: 0;
+    font-weight: 600;
+    letter-spacing: 2px;
+    border-radius: 20px;
+}
+
+.login-form button:hover{
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+    color: #f9f9f9;
+}
+
+.active {
+    display: none;
+}
